@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Makii</title>
+</head>
+<body>
+    <%- include('../layout') %>
+    <div class="py-2">
+        <a href="/" class="btn btn-success">Back</a>
+    </div>
+    <hr>
+    <h2><%= data %></h2>
+    <form action="">
+        <div class="form-group">
+            <label for="">Blogs name</label>
+            <input type="text" name="title" class="form-control" id="">
+        </div>
+        <div class="form-group">
+            <label for="">Blogs Author</label>
+            <input type="text" name="name" class="form-control" id="">
+        </div>
+        <div class="form-group">
+            <label for="">Blogs Type</label>
+            <select name="category" id="" class="form-control">
+                <option value="novel">Novel</option>
+                <option value="discovery">discovery</option>
+            </select>
+        </div>
+        <input type="submit" class="btn btn-primary" name="" id="" value="save">
+    </form>
+</body>
+</html>
